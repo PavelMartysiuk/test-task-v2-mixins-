@@ -43,5 +43,5 @@ class BookAPI(mixins.RetrieveModelMixin, mixins.UpdateModelMixin,
         return self.update(request, pk)
 
     def delete(self, request, pk):
-        """Func delete current book """
+        """Func removes current book """
         return self.destroy(request, pk)
